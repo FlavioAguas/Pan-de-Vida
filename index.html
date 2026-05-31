@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan de Vida - Fundación Suyana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root { 
+            --primary: #d4a373; /* Color trigo/pan */
+            --dark: #4a3b32; /* Café oscuro */
+            --light: #fdf8f5; /* Fondo crema muy suave */
+            --accent: #8b5e34; /* Café medio cálido */
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        header { background: white; border-bottom: 5px solid var(--primary); padding: 50px 20px; text-align: center; }
+        header h1 { font-size: 3em; margin: 10px 0 0 0; letter-spacing: 2px; color: var(--accent); }
+        header p { font-size: 1.3em; color: var(--dark); margin: 10px 0 0 0; font-weight: 500; }
+        
+        .logo { max-width: 150px; height: auto; margin-bottom: 15px; }
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+        
+        .section { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.04); margin-bottom: 40px; }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-bottom: 25px; display: inline-block;}
+        
+        .hero-text { font-size: 1.15em; text-align: justify; }
+        .foto-principal { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 25px; }
+
+        .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
+        .card { text-align: center; padding: 25px; background: var(--light); border-radius: 10px; border: 1px solid #f0e6dd; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+        .card i { font-size: 2.8em; color: var(--primary); margin-bottom: 15px; }
+        .card h3 { color: var(--dark); margin-bottom: 10px; font-size: 1.2em; }
+        .card p { font-size: 0.95em; color: #665245; }
+
+        .cta-box { text-align: center; background: var(--accent); color: white; padding: 50px 30px; border-radius: 15px; margin-top: 20px; }
+        .cta-box h2 { color: white; border-bottom: none; }
+        .btn { display: inline-block; background: white; color: var(--accent); padding: 15px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1em; transition: 0.3s; margin-top: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .btn:hover { background: var(--primary); color: white; }
+
+        footer { text-align: center; padding: 40px 20px; color: #777; font-size: 0.9em; background: white; border-top: 1px solid #eee; }
+        footer p { margin: 5px 0; }
+        footer i { color: var(--primary); margin-right: 8px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagenes/logo_pandevida.png" alt="Logo Pan de Vida" class="logo">
+        <h1>Pan de vida</h1>
+        <p>Transformando muros en puentes a través del servicio y el sabor.</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <img src="imagenes/horno_solidario.jpg" alt="Horno Solidario" class="foto-principal">
+            
+            <h2>Objetivo del Proyecto</h2>
+            <p class="hero-text">Convertir el encierro en una escuela de servicio, donde jóvenes en proceso de reinserción transforman donaciones en esperanza horneada para alimentar gratuitamente a quienes más lo necesitan (pacientes en hospitales).</p>
+        </div>
+
+        <div class="section">
+            <h2>Nuestras 4 Áreas de Acción</h2>
+            <div class="grid-4">
+                <div class="card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Semilleros de Oficio</h3>
+                    <p>Escuela técnica donde profesionales donan conocimiento para enseñar panadería a los jóvenes.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                    <h3>El Horno Solidario</h3>
+                    <p>Red logística para donaciones recurrentes de insumos básicos (harina, levadura, grasas).</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-hands-holding-circle"></i>
+                    <h3>Vínculos que Restauran</h3>
+                    <p>Difusión de testimonios para romper el estigma social de los adolescentes infractores.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <h3>Gestión Transparente</h3>
+                    <p>Trazabilidad total donde cada donante ve el fruto de su aporte y el progreso técnico.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h2>Súmate al cambio</h2>
+            <p>Ya sea donando una clase maestra, apadrinando un saco de harina o ayudando en logística, tu apoyo hace la diferencia.</p>
+            
+            <a href="TU_ENLACE_DE_APPS_SCRIPT_AQUI" target="_blank" class="btn">Quiero Ayudar</a>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Fundación Suyana</strong> - Proyecto Pan de Vida</p>
+        <p><i class="fa-solid fa-location-dot"></i> Ricardo Cordero 2-57, Cuenca, Ecuador</p>
+        <p><i class="fa-solid fa-phone"></i> 096 325 5724 | <i class="fa-solid fa-envelope"></i> gerencia@suyanafoundation.org</p>
+    </footer>
+
+</body>
+</html>

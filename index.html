@@ -18,14 +18,22 @@
         header h1 { font-size: 3em; margin: 10px 0 0 0; letter-spacing: 2px; color: var(--accent); }
         header p { font-size: 1.3em; color: var(--dark); margin: 10px 0 0 0; font-weight: 500; }
         
+        /* ESTILO DEL LOGO */
         .logo { max-width: 150px; height: auto; margin-bottom: 15px; }
+        
         .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
         
         .section { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.04); margin-bottom: 40px; }
         h2 { color: var(--accent); border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-bottom: 25px; display: inline-block;}
         
         .hero-text { font-size: 1.15em; text-align: justify; }
+        
+        /* ESTILO DE LA FOTO PRINCIPAL */
         .foto-principal { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 25px; }
+
+        /* ESTILO PARA LA GALERÍA DE 2 FOTOS */
+        .galeria-doble { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        .galeria-doble img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 
         .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
         .card { text-align: center; padding: 25px; background: var(--light); border-radius: 10px; border: 1px solid #f0e6dd; transition: 0.3s; }
@@ -47,14 +55,14 @@
 <body>
 
     <header>
-        <img src="imagenes/logo_pandevida.png" alt="Logo Pan de Vida" class="logo">
+        <img src="imagenes/logo_pan_de_vida.png" alt="Logo Pan de Vida" class="logo">
         <h1>Pan de vida</h1>
         <p>Transformando muros en puentes a través del servicio y el sabor.</p>
     </header>
 
     <div class="container">
         <div class="section">
-            <img src="imagenes/horno_solidario.jpg" alt="Horno Solidario" class="foto-principal">
+            <img src="imagenes/pan_de_vida_1.jpeg" alt="Proyecto Pan de Vida" class="foto-principal">
             
             <h2>Objetivo del Proyecto</h2>
             <p class="hero-text">Convertir el encierro en una escuela de servicio, donde jóvenes en proceso de reinserción transforman donaciones en esperanza horneada para alimentar gratuitamente a quienes más lo necesitan (pacientes en hospitales).</p>
@@ -83,6 +91,11 @@
                     <h3>Gestión Transparente</h3>
                     <p>Trazabilidad total donde cada donante ve el fruto de su aporte y el progreso técnico.</p>
                 </div>
+            </div>
+
+            <div class="galeria-doble">
+                <img src="imagenes/pan_de_vida_2.jpeg" alt="Pan de Vida en acción">
+                <img src="imagenes/pan_de_vida_3.jpeg" alt="Impacto de Pan de Vida">
             </div>
         </div>
 
